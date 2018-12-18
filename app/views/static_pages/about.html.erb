@@ -1,12 +1,12 @@
-<% provide :title, t(".about") %>
+<% provide :title, t("about") %>
 <h1><%= t ".about" %></h1>
 <p>
-  <%= t ".the" %> <%= link_to t("tuto"), "http://www.railstutorial.org/" %> <%= t ".is" %>
+  <%= t "the" %> <%= link_to t("tuto"), "http://www.railstutorial.org/" %> <%= t ".is" %>
   <%= link_to t(".book"), "http://www.railstutorial.org/book" %> <%= t ".and" %>
   <%= link_to t(".screencast"), "http://screencasts.railstutorial.org/" %>
   <%= t ".teach" %>
   <%= link_to t("ror"), "http://www.rubyonrails.org/" %>.
   <br><%= t ".intro" %></br>
 </p>
-<%= link_to "Eng", locale:"en" %>
-<%= link_to "Vie", locale:"vi" %>
+<%= link_to "Eng", locale: "en" %>
+<%= link_to "Vie", locale: "vi" %>
