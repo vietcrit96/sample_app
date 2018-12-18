@@ -18,7 +18,6 @@ vi:
     home:
       home_pages: "Đây là trang chủ cho"
       sample_application: "ứng dụng mẫu."
-      sign_up_now: "Đăng kí ngay!"
     help:
       get_help: "Nhận sự hỗ trợ Ruby on Rails tại "
       help_section: "hỗ trợ Rails Tutorial "
@@ -71,6 +70,11 @@ vi:
       log_out: "Đăng xuất"
       language: Ngôn ngữ 
       account: Tài khoản
+  user_mailer:
+    account_activation:
+      activate: Kích hoạt
+      hi: Chào
+      welcome_and_active: Chào mừng đến với ứng dụng mẫu! Bấm vào link dưới đây để kích hoạt tài khoản của bạn
   news: "Tài liệu"
   sign_up: "Đăng kí"
   by: "bởi"
@@ -83,7 +87,7 @@ vi:
   tuto: "Hướng dẫn Ruby on Rails"
   ror: "Ruby on Rails"
   ror_sampleapp: "Hướng dẫn ứng dụng mẫu Ruby on Rails"
-  sample_app_u: "ứng dụng mẫu"
+  sample_app_u: "Ứng dụng mẫu"
   sample_app: "Chào mừng đến với ứng dụng mẫu"
   notice_show: "Không tìm thấy người dùng có id này. Hãy đăng kí tài khoản mới!"
   signup_err: "Đăng kí không thành công!"
@@ -94,3 +98,8 @@ vi:
   user_del: Đã xóa người dùng
   edit_fail: Đã xảy ra lỗi
   user_del_fail: Không thể xóa
+  not_active_check_email: Tài khoản chưa được kích hoạt. Kiểm tra email của bạn để thấy được liên kết kích hoạt.
+  please_check_email: Hãy kiểm tra thư trong email để kích hoạt tài khoản của bạn.
+  activated: Tài khoản đã được kích hoạt!
+  link_active: Liên kết kích hoạt không hợp lệ
+  activation: Kích hoạt tài khoản

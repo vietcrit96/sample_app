@@ -56,6 +56,11 @@ en:
       log_out: "Log out"
       language: Language
       account: Account
+  user_mailer:
+    account_activation:
+      activate: Activate
+      hi: Hi
+      welcome_and_active: Welcome to the Sample App! Click on the link below to activate your account
   news: "News"
   sign_up: "Sign up"
   by: "by"
@@ -68,7 +73,7 @@ en:
   tuto: "Ruby on Rails Tutorial"
   ror: "Ruby on Rails"
   ror_sampleapp: "Ruby on Rails Tutorial Sample App"
-  sample_app_u: "sample app"
+  sample_app_u: "Sample app"
   sample_app: "Welcome to the Sample App"
   notice_show: "Could not find user with this id. Sign up new user please!"
   signup_err: "Unsuccessful registration!"
@@ -79,3 +84,8 @@ en:
   user_del: User deleted
   edit_fail: Have something errors
   user_del_fail: Can't delete
+  not_active_check_email: Account not activated. Check your email for the activation link.
+  please_check_email: Please check your email to activate your account.
+  activated: Account activated!
+  link_active: Invalid activation link
+  activation: Account activation
