@@ -1,10 +1,17 @@
 vi:
+  activerecord:
+    models:
+      user:
+    attributes:
+      user:
+        name: "Tên"
+        password: "Mật khẩu"
+        password_confirmation: "Mật khẩu"
   static_pages:
     home:
-      sample_app: "Chào mừng đến với ứng dụng mẫu"
       home_pages: "Đây là trang chủ cho"
       sample_application: "ứng dụng mẫu."
-      sign_up: "Đăng kí ngay!"
+      sign_up_now: "Đăng kí ngay!"
     help:
       get_help: "Nhận sự hỗ trợ Ruby on Rails tại "
       help_section: "hỗ trợ Rails Tutorial "
@@ -22,8 +29,15 @@ vi:
       contact_page: "trang liên lạc"
   users:
     new:
-      signup_page: "Đây là trang đăng kí cho người dùng mới."
-  news: "Báo"
+      name: "Tên"
+      pass: "Mật khẩu"
+      confirm_pass: "Xác nhận mật khẩu"
+      create_acc: "Tạo tài khoản của tôi"
+  shared:
+    error_messages:
+      form_contains: "Nội dung đăng kí có"
+      err: "lỗi"
+  news: "Tài liệu"
   sign_up: "Đăng kí"
   by: "bởi"
   home: "Trang chủ"
@@ -36,3 +50,6 @@ vi:
   ror: "Ruby on Rails"
   ror_sampleapp: "Hướng dẫn ứng dụng mẫu Ruby on Rails"
   sample_app_u: "ứng dụng mẫu"
+  sample_app: "Chào mừng đến với ứng dụng mẫu"
+  notice_show: "Không tìm thấy người dùng có id này. Hãy đăng kí tài khoản mới!"
+  signup_err: "Đăng kí không thành công!"
