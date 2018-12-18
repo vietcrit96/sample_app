@@ -1,2 +1,9 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<% provide :title, t(".home") %>
+<h1><%= t ".sample_app" %></h1>
+<p>
+  <%= t ".home_pages" %>
+  <%= link_to t("tuto"), "http://www.railstutorial.org/" %>
+  <%= t ".sample_application" %>
+</p>
+<%= link_to "Eng", locale:"en" %>
+<%= link_to "Vie", locale:"vi" %>
