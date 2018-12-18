@@ -5,9 +5,35 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to t("home"), root_path %></li>
         <li><%= link_to t("help"), help_path %></li>
-        <li><%= link_to t("log_in"), "#" %></li>
-        <%= link_to "Eng", locale:"en" %>
-        <%= link_to "Vie", locale:"vi" %>
+        <% if logged_in? %>
+          <li><%= link_to t(".users"), "#" %></li>
+          <li class="dropdown">
+            <%= link_to "#", class: "dropdown-toggle", data: {toggle: "dropdown"} do %>
+              <%= t ".account" %>
+              <b class="caret"></b>
+            <% end %>
+            <ul class="dropdown-menu">
+              <li><%= link_to t(".profile"), current_user %></li>
+              <li><%= link_to t(".setting"), "#" %></li>
+              <li class="divider"></li>
+              <li>
+                <%= link_to t(".log_out"), logout_path, method: :delete %>
+              </li>
+            </ul>
+          </li>
+        <% else %>
+          <li><%= link_to t("log_in"), login_path %></li>
+        <% end %>
+        <li class="dropdown">
+            <%= link_to "#", class: "dropdown-toggle", data: {toggle: "dropdown"} do %>
+              <%= t ".language" %>
+              <b class="caret"></b>
+            <% end %>
+            <ul class="dropdown-menu">
+              <li><%= link_to "Eng", locale: "en" %></li>
+              <li><%= link_to "Vie", locale: "vi" %></li>
+            </ul>
+          </li>
       </ul>
     </nav>
   </div>

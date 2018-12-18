@@ -37,6 +37,18 @@ vi:
     error_messages:
       form_contains: "Nội dung đăng kí có"
       err: "lỗi"
+  sessions:
+    new:
+      pass: "Mật khẩu"
+      new_user: "Tạo tài khoản mới? "
+  layouts:
+    header:
+      users: "Người dùng"
+      profile: "Thông tin"
+      setting: "Cài đặt"
+      log_out: "Đăng xuất"
+      language: Ngôn ngữ 
+      account: Tài khoản
   news: "Tài liệu"
   sign_up: "Đăng kí"
   by: "bởi"
@@ -53,3 +65,5 @@ vi:
   sample_app: "Chào mừng đến với ứng dụng mẫu"
   notice_show: "Không tìm thấy người dùng có id này. Hãy đăng kí tài khoản mới!"
   signup_err: "Đăng kí không thành công!"
+  sign_up_now: "Đăng kí ngay!"
+  invalid_mail_or_pass: "Tài khoản hoặc mật khẩu không đúng!"
