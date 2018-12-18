@@ -1,4 +1,11 @@
 vi:
+  views:
+    pagination:
+      next: Trang tiếp >
+      last: Trang cuối >>
+      first: << Trang đầu
+      previous: < Trang trước
+      truncate: "&hellip;"
   activerecord:
     models:
       user:
@@ -28,14 +35,28 @@ vi:
       contact_rort: "Liên hệ với Hướng dẫn về Ruby on Rails về ứng dụng mẫu tại"
       contact_page: "trang liên lạc"
   users:
+    user:
+      del: Xóa
+      sure: Bạn có chắc chắn?
     new:
       name: "Tên"
       pass: "Mật khẩu"
       confirm_pass: "Xác nhận mật khẩu"
       create_acc: "Tạo tài khoản của tôi"
+    edit:
+      edit_user: Chỉnh sửa tài khoản
+      update_pf: Cập nhật thông tin của bạn
+      save_change: Lưu thay đổi
+      change: Thay đổi
+    form:
+      name: Tên
+      pass: Mật khẩu
+      confirm_pass: Xác nhận mật khẩu
+    index:
+      all_user: Tất cả người dùng
   shared:
     error_messages:
-      form_contains: "Nội dung đăng kí có"
+      form_contains: "Nội dung có"
       err: "lỗi"
   sessions:
     new:
@@ -68,3 +89,8 @@ vi:
   signup_err: "Đăng kí không thành công!"
   sign_up_now: "Đăng kí ngay!"
   invalid_mail_or_pass: "Tài khoản hoặc mật khẩu không đúng!"
+  update_success: "Cập nhật thành công"
+  please_login: Hãy đăng nhập.
+  user_del: Đã xóa người dùng
+  edit_fail: Đã xảy ra lỗi
+  user_del_fail: Không thể xóa

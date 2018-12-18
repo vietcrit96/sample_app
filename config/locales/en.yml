@@ -23,11 +23,22 @@ en:
       contact_rort: "Contact the Ruby on Rails Tutorial about the sample app at the"
       contact_page: "contact page"
   users:
+    user:
+      del: Delete
+      sure: You sure?
     new:
+      create_acc: "Create my account"
+    edit:
+      edit_user: Edit user
+      update_pf: Update your profile
+      save_change: Save changes
+      change: Change
+    form:
       name: "Name"
       pass: "Password"
       confirm_pass: "Confirmation"
-      create_acc: "Create my account"
+    index:
+      all_user: All users
   shared:
     error_messages:
       form_contains: "The form contains"
@@ -63,3 +74,8 @@ en:
   signup_err: "Unsuccessful registration!"
   sign_up_now: "Sign up now!"
   invalid_mail_or_pass: "Invalid email/password combination"
+  update_success: "Update success"
+  please_login: Please log in.
+  user_del: User deleted
+  edit_fail: Have something errors
+  user_del_fail: Can't delete
