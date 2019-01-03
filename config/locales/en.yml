@@ -1,10 +1,13 @@
 en:
+  activerecord:
+    models:
+      user:
+    
   static_pages:
     home:
-      sample_app: "Welcome to the Sample App"
       home_pages: "This is the home page for the "
       sample_application: "sample application."
-      sign_up: "Sign up now!"
+      sign_up_now: "Sign up now!"
     help:
       get_help: "Get help on the Ruby on Rails Tutorial at the "
       help_section: "Rails Tutorial help section"
@@ -22,7 +25,14 @@ en:
       contact_page: "contact page"
   users:
     new:
-      signup_page: "This will be a signup page for new users."
+      name: "Name"
+      pass: "Password"
+      confirm_pass: "Confirmation"
+      create_acc: "Create my account"
+  shared:
+    error_messages:
+      form_contains: "The form contains"
+      err: "errors"
   news: "News"
   sign_up: "Sign up"
   by: "by"
@@ -36,3 +46,6 @@ en:
   ror: "Ruby on Rails"
   ror_sampleapp: "Ruby on Rails Tutorial Sample App"
   sample_app_u: "sample app"
+  sample_app: "Welcome to the Sample App"
+  notice_show: "Could not find user with this id. Sign up new user please!"
+  signup_err: "Unsuccessful registration!"
