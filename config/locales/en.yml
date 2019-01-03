@@ -7,7 +7,6 @@ en:
     home:
       home_pages: "This is the home page for the "
       sample_application: "sample application."
-      sign_up_now: "Sign up now!"
     help:
       get_help: "Get help on the Ruby on Rails Tutorial at the "
       help_section: "Rails Tutorial help section"
@@ -33,6 +32,18 @@ en:
     error_messages:
       form_contains: "The form contains"
       err: "errors"
+  sessions:
+    new:
+      pass: "Password"
+      new_user: "New user?"
+  layouts:
+    header:
+      users: "Users"
+      profile: "Profile"
+      setting: "Settings"
+      log_out: "Log out"
+      language: Language
+      account: Account
   news: "News"
   sign_up: "Sign up"
   by: "by"
@@ -49,3 +60,5 @@ en:
   sample_app: "Welcome to the Sample App"
   notice_show: "Could not find user with this id. Sign up new user please!"
   signup_err: "Unsuccessful registration!"
+  sign_up_now: "Sign up now!"
+  invalid_mail_or_pass: "Invalid email/password combination"
