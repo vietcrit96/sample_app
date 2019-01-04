@@ -41,6 +41,7 @@ vi:
     new:
       pass: "Mật khẩu"
       new_user: "Tạo tài khoản mới? "
+      remember_me: Ghi nhớ tài khoản
   layouts:
     header:
       users: "Người dùng"
