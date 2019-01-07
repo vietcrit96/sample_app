@@ -3,3 +3,5 @@ user_email_length_max: 250
 user_pass_length_min: 6
 gravatar_size: 80
 remember_me: 1
+gravatar_user_size: 50
+split_page: 10

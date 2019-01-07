@@ -21,6 +21,6 @@ class SessionsController < ApplicationController
     log_in user
     rmb = params[:session][:remember_me]
     rmb == Settings.remember_me ? remember(user) : forget(user)
-    redirect_to user
+    redirect_back_or user
   end
 end
