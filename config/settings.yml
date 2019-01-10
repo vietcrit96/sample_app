@@ -5,3 +5,4 @@ gravatar_size: 80
 remember_me: 1
 gravatar_user_size: 50
 split_page: 10
+expired_time: 2

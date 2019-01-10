@@ -1,11 +1,11 @@
 class UsersController < ApplicationController
   before_action :load_user, only: [:show, :edit, :update, :destroy]
-  before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
+  before_action :logged_in_user, only: [:index, :show, :edit, :update, :destroy]
   before_action :correct_user, only: [:edit, :update]
   before_action :admin_user, only: :destroy
 
   def index
-    @users = User.page(params[:page]).per(Settings.split_page)
+    @users = User.activated.page(params[:page]).per Settings.split_page
   end
 
   def new
@@ -16,21 +16,20 @@ class UsersController < ApplicationController
     @user = User.new user_params
 
     if @user.save
-      log_in @user
-      flash[:success] = t "sample_app"
-      redirect_to @user
+      send_email_active @user
     else
       flash[:danger] = t "signup_err"
       render :new
     end
   end
 
-  def show; end
+  def show
+    redirect_to(root_url) && return unless @user
+  end
 
   def edit; end
 
   def update
-
     if @user.update user_params
       flash[:success] = t "update_success"
       redirect_to @user
@@ -41,7 +40,6 @@ class UsersController < ApplicationController
   end
 
   def destroy
-
     if @user.destroy
       flash[:success] = t "user_del"
       redirect_to users_url
@@ -79,5 +77,11 @@ class UsersController < ApplicationController
     return if @user
     flash[:danger] = t "notice_show"
     redirect_to signup_path
+  end
+
+  def send_email_active user
+    user.send_activation_email
+    flash[:info] = t "please_check_email"
+    redirect_to root_url
   end
 end

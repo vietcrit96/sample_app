@@ -48,6 +48,7 @@ en:
       pass: "Password"
       new_user: "New user?"
       remember_me: Remember me on this computer
+      forget_pass: (Forgot password)
   layouts:
     header:
       users: "Users"
@@ -56,6 +57,31 @@ en:
       log_out: "Log out"
       language: Language
       account: Account
+  password_resets:
+    send_mail_reset_pass: Email sent with password reset instructions
+    not_found_email: Email address not found
+    nt_be_empty: Can't be empty
+    has_been_reset: Password has been reset.
+    pass_cant_reset: Error! An error occurred. Please try again later. Password cannot be changed
+    reset_expired: Password reset has expired.
+    new:
+      forget_pass: Forgot password
+      submit: Submit
+    edit:
+      reset_pass: Reset password
+      pass: "Password"
+      confirm_pass: "Confirmation"
+      update_pass: Update password
+  user_mailer:
+    account_activation:
+      activate: Activate
+      hi: Hi
+      welcome_and_active: Welcome to the Sample App! Click on the link below to activate your account
+    password_reset:
+      click_link_below: "To reset your password click the link below:"
+      reset_pass: Reset password
+      expire_2_hours: This link will expire in two hours.
+      if_not_you: If you did not request your password to be reset, please ignore this email and your password will stay as it is.
   news: "News"
   sign_up: "Sign up"
   by: "by"
@@ -68,7 +94,7 @@ en:
   tuto: "Ruby on Rails Tutorial"
   ror: "Ruby on Rails"
   ror_sampleapp: "Ruby on Rails Tutorial Sample App"
-  sample_app_u: "sample app"
+  sample_app_u: "Sample app"
   sample_app: "Welcome to the Sample App"
   notice_show: "Could not find user with this id. Sign up new user please!"
   signup_err: "Unsuccessful registration!"
@@ -79,3 +105,8 @@ en:
   user_del: User deleted
   edit_fail: Have something errors
   user_del_fail: Can't delete
+  please_check_email: Please check your email to activate your account.
+  activated: Account activated!
+  link_active: Invalid activation link
+  activation: Account activation
+  pass_reset: Password reset
