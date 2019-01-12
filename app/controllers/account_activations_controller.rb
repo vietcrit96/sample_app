@@ -11,7 +11,7 @@ class AccountActivationsController < ApplicationController
   end
 
   private
-  
+
   def user_activated user
     user.activate
     log_in user

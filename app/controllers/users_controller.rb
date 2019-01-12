@@ -26,7 +26,7 @@ class UsersController < ApplicationController
   def show
     redirect_to(root_url) && return unless @user
   end
-  
+
   def edit; end
 
   def update

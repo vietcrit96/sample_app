@@ -22,7 +22,7 @@ class SessionsController < ApplicationController
   end
 
   private
-  
+
   def remember_login user
     log_in user
     rmb = params[:session][:remember_me]

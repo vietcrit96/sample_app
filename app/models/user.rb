@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  attr_reader :remember_token, :activation_token
+  attr_reader :remember_token, :activation_token, :reset_token
   before_create :create_activation_digest
   before_save :downcase_email
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
@@ -11,7 +11,7 @@ class User < ApplicationRecord
   validates :password, presence: true,
     length: {minimum: Settings.user_pass_length_min}, allow_nil: true
   has_secure_password
-  scope :activated, -> {where activated: true}
+  scope :activated, ->{where activated: true}
 
   class << self
     def digest string
@@ -30,7 +30,7 @@ class User < ApplicationRecord
 
   def authenticated? attribute, remember_token
     digest = send "#{attribute}_digest"
-    return unless !digest.nil?
+    return unless digest
     BCrypt::Password.new(digest).is_password? remember_token
   end
 
@@ -46,13 +46,26 @@ class User < ApplicationRecord
   def current_user? current_user
     self == current_user
   end
-  
+
   def activate
     update_columns activated: true, activated_at: Time.zone.now
   end
 
   def send_activation_email
     UserMailer.account_activation(self).deliver_now
+  end
+
+  def create_reset_digest
+    @reset_token = User.new_token
+    update reset_digest: User.digest(reset_token), reset_sent_at: Time.zone.now
+  end
+
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_now
+  end
+
+  def password_reset_expired?
+    reset_sent_at < Settings.expired_time.hours.ago
   end
   private
 

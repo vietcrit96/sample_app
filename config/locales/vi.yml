@@ -62,6 +62,7 @@ vi:
       pass: "Mật khẩu"
       new_user: "Tạo tài khoản mới? "
       remember_me: Ghi nhớ tài khoản
+      forget_pass: (Quên mật khẩu)
   layouts:
     header:
       users: "Người dùng"
@@ -70,11 +71,31 @@ vi:
       log_out: "Đăng xuất"
       language: Ngôn ngữ 
       account: Tài khoản
+  password_resets:
+    send_mail_reset_pass: Email đã được gửi kèm theo cách thức đặt lại mật khẩu
+    not_found_email: Không tìm thấy địa chỉ email
+    nt_be_empty: Không thể để trống
+    has_been_reset: Mật khẩu đã được đặt lại.
+    pass_cant_reset: Lỗi! Đã xảy ra lỗi. Vui lòng thử lại. Mật khẩu vẫn được giữ nguyên
+    reset_expired: Đặt lại mật khẩu đã hết hạn.
+    new:
+      forget_pass: Quên mật khẩu
+      submit: Gửi đi
+    edit:
+      reset_pass: Đặt lại mật khẩu
+      pass: Mật khẩu
+      confirm_pass: Xác nhận mật khẩu
+      update_pass: Cập nhật mật khẩu
   user_mailer:
     account_activation:
       activate: Kích hoạt
       hi: Chào
       welcome_and_active: Chào mừng đến với ứng dụng mẫu! Bấm vào link dưới đây để kích hoạt tài khoản của bạn
+    password_reset:
+      click_link_below: "Để đặt lại mật khẩu, nhấp vào liên kết dưới đây:"
+      reset_pass: Đặt lại mật khẩu
+      expire_2_hours: Liên kết này sẽ hết hạn sau hai giờ.
+      if_not_you: Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên.
   news: "Tài liệu"
   sign_up: "Đăng kí"
   by: "bởi"
@@ -103,3 +124,4 @@ vi:
   activated: Tài khoản đã được kích hoạt!
   link_active: Liên kết kích hoạt không hợp lệ
   activation: Kích hoạt tài khoản
+  pass_reset: Đặt lại mật khẩu
