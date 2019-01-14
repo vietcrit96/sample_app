@@ -70,6 +70,13 @@ vi:
       all_user: Tất cả người dùng
     show:
       microposts: Các bài đăng
+    follow:
+      follow: Theo dõi
+    unfollow:
+      unfollow: Bỏ theo dõi
+    show_follow:
+      view_my_profile: Xem thông tin của tôi
+      micropost: "Bài đăng:"
   shared:
     error_messages:
       form_contains: "Nội dung có"
@@ -80,6 +87,9 @@ vi:
     micropost_form:
       compose_new_post: Soạn bài đăng mới...
       post: Đăng
+    stats:
+      following: đang theo dõi
+      followers: người theo dõi
   sessions:
     new:
       pass: "Mật khẩu"
@@ -160,3 +170,5 @@ vi:
   pass_reset: Đặt lại mật khẩu
   less_than_5: Nên dùng ảnh nhỏ hơn 5MB
   danger_max_size_picture: Kích thước tệp tối đa là 5MB. Vui lòng chọn một tập tin nhỏ hơn.
+  following: Đang theo dõi
+  followers: Người theo dõi

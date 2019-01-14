@@ -1,8 +1,10 @@
 class UsersController < ApplicationController
-  before_action :load_user, only: %i(show edit update destroy)
-  before_action :logged_in_user, only: %i(index show edit update destroy)
+  before_action :load_user,
+    only: %i(show edit update destroy)
+  before_action :logged_in_user,
+    only: %i(index show edit update destroy)
   before_action :correct_user, only: %i(edit update)
-  before_action :admin_user, only: :destroy
+  before_action :admin_user, only: %i(destroy)
 
   def index
     @users = User.activated.page(params[:page]).per Settings.split_page
@@ -24,8 +26,10 @@ class UsersController < ApplicationController
   end
 
   def show
-    redirect_to(root_url) && return unless @user.microposts
+    @follow = current_user.active_relationships.build
+    @unfollow = current_user.active_relationships.find_by followed_id: @user.id
     @microposts = @user.microposts.page(params[:page]).per Settings.split_page
+    redirect_to(root_url) && return unless @user.microposts
   end
 
   def edit; end
