@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
-  before_action :load_user, only: [:show, :edit, :update, :destroy]
-  before_action :logged_in_user, only: [:index, :show, :edit, :update, :destroy]
-  before_action :correct_user, only: [:edit, :update]
+  before_action :load_user, only: %i(show edit update destroy)
+  before_action :logged_in_user, only: %i(index show edit update destroy)
+  before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
   def index
@@ -24,7 +24,8 @@ class UsersController < ApplicationController
   end
 
   def show
-    redirect_to(root_url) && return unless @user
+    redirect_to(root_url) && return unless @user.microposts
+    @microposts = @user.microposts.page(params[:page]).per Settings.split_page
   end
 
   def edit; end

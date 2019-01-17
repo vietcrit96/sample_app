@@ -14,10 +14,25 @@ vi:
         name: "Tên"
         password: "Mật khẩu"
         password_confirmation: "Mật khẩu"
+      micropost:
+        content: Nội dung
+  datetime:
+    distance_in_words:
+      about_x_hours: 
+        one: Khảng 1 giờ
+        other: khoảng %{count} giờ
+      less_than_x_minutes:
+        one: ít hơn 1 phút
+        other: ít hơn %{count} phút
+      x_minutes:
+        one: khoảng 1 phút
+        other: khoảng %{count} phút
+
   static_pages:
     home:
       home_pages: "Đây là trang chủ cho"
       sample_application: "ứng dụng mẫu."
+      micropost_feed: Danh sách bài đăng
     help:
       get_help: "Nhận sự hỗ trợ Ruby on Rails tại "
       help_section: "hỗ trợ Rails Tutorial "
@@ -53,16 +68,34 @@ vi:
       confirm_pass: Xác nhận mật khẩu
     index:
       all_user: Tất cả người dùng
+    show:
+      microposts: Các bài đăng
   shared:
     error_messages:
       form_contains: "Nội dung có"
       err: "lỗi"
+    user_info:
+      view_my_profile: Xem thông tin của tôi
+      micropost: Bài đăng
+    micropost_form:
+      compose_new_post: Soạn bài đăng mới...
+      post: Đăng
   sessions:
     new:
       pass: "Mật khẩu"
       new_user: "Tạo tài khoản mới? "
       remember_me: Ghi nhớ tài khoản
       forget_pass: (Quên mật khẩu)
+  microposts:
+    post_created: Bài đăng đã được tạo!
+    fail_post_create: Lỗi! Bài đăng đã hủy bỏ!
+    post_del: Đã xóa bài đăng
+    post_del_fail: Không thể xóa bài đăng
+    micropost:
+      posted: Đã đăng
+      ago: trước.
+      del: Xóa
+      sure: Bạn có chắc chắn?
   layouts:
     header:
       users: "Người dùng"
@@ -125,3 +158,5 @@ vi:
   link_active: Liên kết kích hoạt không hợp lệ
   activation: Kích hoạt tài khoản
   pass_reset: Đặt lại mật khẩu
+  less_than_5: Nên dùng ảnh nhỏ hơn 5MB
+  danger_max_size_picture: Kích thước tệp tối đa là 5MB. Vui lòng chọn một tập tin nhỏ hơn.

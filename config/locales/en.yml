@@ -7,6 +7,7 @@ en:
     home:
       home_pages: "This is the home page for the "
       sample_application: "sample application."
+      micropost_feed: Micropost Feed
     help:
       get_help: "Get help on the Ruby on Rails Tutorial at the "
       help_section: "Rails Tutorial help section"
@@ -39,16 +40,34 @@ en:
       confirm_pass: "Confirmation"
     index:
       all_user: All users
+    show:
+      microposts: Microposts
   shared:
     error_messages:
       form_contains: "The form contains"
       err: "errors"
+    user_info:
+      view_my_profile: View my profile
+      micropost: Micropost
+    micropost_form:
+      compose_new_post: Compose new micropost...
+      post: Post
   sessions:
     new:
       pass: "Password"
       new_user: "New user?"
       remember_me: Remember me on this computer
       forget_pass: (Forgot password)
+  microposts:
+    post_created: Micropost created!
+    fail_post_create: Error! Micropost aborted!
+    post_del: Micropost deleted
+    post_del_fail: Couldn't delete micropost
+    micropost:
+      posted: Posted
+      ago: ago.
+      del: Delete
+      sure: You sure?
   layouts:
     header:
       users: "Users"
@@ -105,8 +124,11 @@ en:
   user_del: User deleted
   edit_fail: Have something errors
   user_del_fail: Can't delete
+  not_active_check_email: Account not activated. Check your email for the activation link.
   please_check_email: Please check your email to activate your account.
   activated: Account activated!
   link_active: Invalid activation link
   activation: Account activation
   pass_reset: Password reset
+  less_than_5: Should be less than 5MB
+  danger_max_size_picture: Maximum file size is 5MB. Please choose a smaller file.
