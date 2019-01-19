@@ -42,6 +42,13 @@ en:
       all_user: All users
     show:
       microposts: Microposts
+    follow:
+      follow: Follow
+    unfollow:
+      unfollow: Unfollow
+    show_follow:
+      view_my_profile: View my profile
+      micropost: "Microposts:"
   shared:
     error_messages:
       form_contains: "The form contains"
@@ -52,6 +59,9 @@ en:
     micropost_form:
       compose_new_post: Compose new micropost...
       post: Post
+    stats:
+      following: following
+      followers: followers
   sessions:
     new:
       pass: "Password"
@@ -132,3 +142,5 @@ en:
   pass_reset: Password reset
   less_than_5: Should be less than 5MB
   danger_max_size_picture: Maximum file size is 5MB. Please choose a smaller file.
+  following: Following
+  followers: Followers
